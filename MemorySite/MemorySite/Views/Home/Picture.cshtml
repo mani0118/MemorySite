@@ -1,0 +1,128 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5画图特效 超酷的笔刷动画效果演示</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Color Draw">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="~/Content/demo.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/slicebox.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/index.js"></script>
+    <script src="~/Scripts/prefixfree.min.js"></script>
+    <script src="~/Scripts/modernizr.custom.46884.js"></script>
+    <script src="~/Scripts/jquery.slicebox.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <ul id="sb-slider" class="sb-slider">
+                <li>
+                    
+                    <a href="#" target="_blank"><img src="~/Image/Picture/1.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>Creative Lifesaver</h3>
+                    </div>
+                </li>
+                <li>                   
+                    <a href="#" target="_blank"><img src="~/Image/Picture/2.jpg" />></a>
+                    <div class="sb-description">
+                        <h3>Honest Entertainer</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/3.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>Brave Astronaut</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/4.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>Affectionate Decision Maker</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/5.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>Faithful Investor</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/6.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>Groundbreaking Artist</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/7.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>Selfless Philantropist</h3>
+                    </div>
+                </li>
+            </ul>
+            <div id="shadow" class="shadow"></div>
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="#">Next</a>
+                <a href="#">Previous</a>
+            </div>
+        </div><!-- /wrapper -->
+
+        <section>
+            <div class="button">✹</div>
+            <div class="button clicked">◎</div>
+            <div class="button">✧</div>
+            <div class="button">◈</div>
+            <div class="button">✮</div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            var Page = (function () {
+                var $navArrows = $('#nav-arrows').hide(),
+                    $shadow = $('#shadow').hide(),
+                    slicebox = $('#sb-slider').slicebox({
+                        onReady: function () {
+
+                            $navArrows.show();
+                            $shadow.show();
+                        },
+                        orientation: 'r',
+                        cuboidsRandom: true,
+                        disperseFactor: 30
+                    }),
+                    init = function () {
+                        initEvents();
+                    },
+                    initEvents = function () {
+                        $navArrows.children(':first').on('click', function () {
+                            slicebox.next();
+                            return false;
+
+                        });
+                        $navArrows.children(':last').on('click', function () {
+                            slicebox.previous();
+                            return false;
+                        });
+                    };
+                return { init: init };
+
+            })();
+            Page.init();
+        });
+    </script>
+</body>
+</html>
