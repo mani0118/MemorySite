@@ -1,6 +1,7 @@
 var H = 0;
 
-$('.button').bind('mousedown touchstart',function(e) {
+$('.button').bind('mousedown touchstart', function (e) {
+  alert("trigger");
   $('.clicked').removeClass('clicked');
   $(this).addClass('clicked');
 });

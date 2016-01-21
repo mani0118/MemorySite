@@ -7,7 +7,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTML5画图特效 超酷的笔刷动画效果演示</title>
+    <title>SSH -- 0917</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Color Draw">
@@ -18,14 +18,14 @@
     <link href="~/Content/slicebox.css" rel="stylesheet" />
     <link href="~/Content/custom.css" rel="stylesheet" />
 
-    <script src="~/Scripts/jquery.js"></script>
-    <script src="~/Scripts/index.js"></script>
     <script src="~/Scripts/prefixfree.min.js"></script>
     <script src="~/Scripts/modernizr.custom.46884.js"></script>
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/index.js"></script>
     <script src="~/Scripts/jquery.slicebox.js"></script>
-
 </head>
 <body>
+    @RenderPage("~/Views/Shared/_head.cshtml")
     <div class="container">
         <div class="wrapper">
             <ul id="sb-slider" class="sb-slider">
@@ -78,11 +78,11 @@
                 <a href="#">Next</a>
                 <a href="#">Previous</a>
             </div>
-        </div><!-- /wrapper -->
+        </div>
 
-        <section>
-            <div class="button">✹</div>
-            <div class="button clicked">◎</div>
+        <section style="display:none">
+            <div class="button clicked">✹</div>
+            <div class="button">◎</div>
             <div class="button">✧</div>
             <div class="button">◈</div>
             <div class="button">✮</div>

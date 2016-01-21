@@ -191,6 +191,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\arrow_forward_37px.png" />
     <Content Include="Image\Picture\1.jpg" />
     <Content Include="Image\Picture\2.jpg" />
     <Content Include="Image\Picture\3.jpg" />
@@ -270,9 +271,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_LayoutHome.cshtml" />
     <Content Include="Views\Home\Nav.cshtml" />
     <Content Include="Views\Home\Picture.cshtml" />
+    <Content Include="Views\Shared\_LayoutHome.cshtml" />
+    <Content Include="Views\Shared\_head.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
