@@ -133,5 +133,6 @@ C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\bin\Microsoft.Ow
 C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\obj\Debug\MemorySite.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\obj\Debug\MemorySite.dll
 C:\Users\ASUS\Documents\GitHub\MemorySite\MemorySite\MemorySite\obj\Debug\MemorySite.pdb
