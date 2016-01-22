@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/Content/Error.css" rel="stylesheet" />
+    <title>SSH -- 0917</title>
+    <script src="~/Scripts/Game/ga.js"></script>
+    <script src="~/Scripts/Game/game.js"></script>
+</head>
+<body>
+    <div id="init" style="display: none;">
+        <div id="init-content" class="purple upper">点我点我</div>
+    </div>
+    <div id="popup" style="display: none;">
+        <div class="overlay"></div>
+        <div id="overlay-content">
+            <div id="gameover">
+                <img src="~/Image/ErrorGame/gameover.png" alt="Game Over" />
+            </div>
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+                <div class="entry">
+                    Your Name
+                    @Html.TextBox("code", "")
+                </div>
+            }
+        </div>
+    </div>
+    <div id="blox-header">
+        <div id="blox-header-wrapper">      
+            <a href=".."><img class="fleft" src="~/Image/Logo/Nine32.png" alt="九宝" /></a>
+            <div id="page-title" class="fleft center">
+                <h2>沈诗卉</h2>
+                <div><span class="text"><a href="..">0917</a> waiting</span></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="blox-content"><canvas id="blox" width="675" height="500"></canvas></div>
+    <div class="blox-info">
+        <div class="fleft">
+            <div class="upper purple instructions">Instructions :</div>
+        </div>
+        <div id="balls-block" class="fright">
+            <div id="balls" class="fright padded">3</div>
+            <div class="fright upper padded">Balles</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <hr>
+    <div class="blox-info">
+        <div class="fleft">
+            <div class="key fleft">
+                <div class="rounded spaced upper">Espace</div>
+                <div class="center small-purple upper"> - -</div>
+            </div>
+            <div class="key fleft large-split">
+                <div class="center">
+                    <div class="rounded fleft">
+                        <img src="~/Image/ErrorGame/arrow-left.png" alt="Gauche" />
+                    </div>
+                    <div class="rounded fleft split">
+                        <img src="~/Image/ErrorGame/arrow-right.png" alt="Gauche" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="center small-purple upper">- -</div>
+            </div>
+            <div class="key fleft large-split">
+                <div class="rounded spaced upper">Esc</div>
+                <div class="center small-purple upper">out</div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="score-block" class="fright">
+            <div id="score" class="fright padded"> 000 000 000 000</div>
+            <div class="fright upper padded purple">Pointage</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <hr class="tight">
+</body>
+</html>
+
+@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>*@

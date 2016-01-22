@@ -185,6 +185,7 @@
     <Content Include="Content\custom.css" />
     <Content Include="Content\demo.css" />
     <Content Include="Content\Error.css" />
+    <Content Include="Content\heart.css" />
     <Content Include="Content\HomeStyle.css" />
     <Content Include="Content\slicebox.css" />
     <Content Include="Content\style.css" />
@@ -211,6 +212,15 @@
     <Content Include="Image\Logo\Nine64.png" />
     <Content Include="Image\nav.png" />
     <Content Include="Image\options.png" />
+    <Content Include="Image\Picture\IMG_7398.jpg" />
+    <Content Include="Image\Picture\MVDY9576.jpg" />
+    <Content Include="Image\Picture\ssh1.jpg" />
+    <Content Include="Image\Picture\ssh2.jpg" />
+    <Content Include="Image\Picture\ssh3.jpg" />
+    <Content Include="Image\Picture\ssh4.jpg" />
+    <Content Include="Image\Picture\ssh5.jpg" />
+    <Content Include="Image\Picture\ssh6.jpg" />
+    <Content Include="Image\Picture\ssh7.jpg" />
     <Content Include="Image\shadow.png" />
     <Content Include="Scripts\cloudflare.min.js" />
     <Content Include="Scripts\Game\ga.js" />
@@ -218,6 +228,7 @@
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.lettering.js" />
     <Content Include="Scripts\jquery.slicebox.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr.custom.46884.js" />
@@ -238,8 +249,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -261,7 +270,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Nav.cshtml" />
     <Content Include="Views\Home\Picture.cshtml" />
     <Content Include="Views\Shared\_LayoutHome.cshtml" />
     <Content Include="Views\Shared\_head.cshtml" />
@@ -275,6 +283,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Heart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\SSH.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,127 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SSH -- 0917</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Color Draw">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="~/Content/demo.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/slicebox.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+
+    <script src="~/Scripts/prefixfree.min.js"></script>
+    <script src="~/Scripts/modernizr.custom.46884.js"></script>
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/index.js"></script>
+    <script src="~/Scripts/jquery.slicebox.js"></script>
+</head>
+<body>
+    @RenderPage("~/Views/Shared/_head.cshtml")
+    <div class="container">
+        <div class="wrapper">
+            <ul id="sb-slider" class="sb-slider">
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh1.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>那天你去厦门。印象中就是一个喝到吐，</h3>
+                    </div>
+                </li>
+                <li>                   
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh2.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>还每天四五点睡，七八点起的傻逼。</h3>
+                    </div>
+                </li>
+                <li>                   
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh3.jpg" />></a>
+                    <div class="sb-description">
+                        <h3>回来后发现原来是一只弱鸡！</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh4.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>胃不好，脑子也不好，还要装流氓、卖坚强！</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh5.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>你问我喜欢你什么</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh6.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>其实就想让你靠</h3>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="~/Image/Picture/ssh7.jpg" /></a>
+                    <div class="sb-description">
+                        <h3>让你开心</h3>
+                    </div>
+                </li>
+            </ul>
+            <div id="shadow" class="shadow"></div>
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="#">Next</a>
+                <a href="#">Previous</a>
+            </div>
+        </div>
+
+        <section style="display:none">
+            <div class="button clicked">✹</div>
+            <div class="button">◎</div>
+            <div class="button">✧</div>
+            <div class="button">◈</div>
+            <div class="button">✮</div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            var Page = (function () {
+                var $navArrows = $('#nav-arrows').hide(),
+                    $shadow = $('#shadow').hide(),
+                    slicebox = $('#sb-slider').slicebox({
+                        onReady: function () {
+
+                            $navArrows.show();
+                            $shadow.show();
+                        },
+                        orientation: 'r',
+                        cuboidsRandom: true,
+                        disperseFactor: 30
+                    }),
+                    init = function () {
+                        initEvents();
+                    },
+                    initEvents = function () {
+                        $navArrows.children(':first').on('click', function () {
+                            slicebox.next();
+                            return false;
+
+                        });
+                        $navArrows.children(':last').on('click', function () {
+                            slicebox.previous();
+                            return false;
+                        });
+                    };
+                return { init: init };
+
+            })();
+            Page.init();
+        });
+    </script>
+</body>
+</html>

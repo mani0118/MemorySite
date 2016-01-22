@@ -28,33 +28,29 @@ namespace MemorySite.Controllers
                 return View();
             }
             if (code.Equals(vTrueCode))
+            {
+                Session["IsAuthorized"] = "T";
                 return RedirectToAction("Picture", "Home");
-            return View();
-        }
-
-        public ActionResult Nav()
-        {
+            }
             return View();
         }
 
         public ActionResult Picture()
         {
+            if (Session["IsAuthorized"] == null || 
+                string.IsNullOrEmpty(Session["IsAuthorized"].ToString())||
+                !"T".Equals(Session["IsAuthorized"].ToString()))
+                return RedirectToAction("Index", "Home");
             return View();
         }
-
-
-        public ActionResult About()
+        public ActionResult Heart()
         {
-            ViewBag.Message = "Your application description page.";
-
+            if (Session["IsAuthorized"] == null ||
+                string.IsNullOrEmpty(Session["IsAuthorized"].ToString()) ||
+                !"T".Equals(Session["IsAuthorized"].ToString()))
+                return RedirectToAction("Index", "Home");
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
