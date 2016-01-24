@@ -183,7 +183,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
-    <Content Include="Content\default.css" />
     <Content Include="Content\demo.css" />
     <Content Include="Content\Error.css" />
     <Content Include="Content\heart.css" />
@@ -224,11 +223,9 @@
     <Content Include="Image\Picture\ssh7.jpg" />
     <Content Include="Image\shadow.png" />
     <Content Include="Scripts\cloudflare.min.js" />
-    <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\Game\ga.js" />
     <Content Include="Scripts\Game\game.js" />
     <Content Include="Scripts\index.js" />
-    <Content Include="Scripts\jq.snow.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.lettering.js" />
