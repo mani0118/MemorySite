@@ -1,7 +1,30 @@
-﻿
-@{
-    ViewBag.Title = "Heart";
-}
+﻿@{ Layout = null;}
 
-<h2>Heart</h2>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SSH -- 0917</title>
+    <link href="~/Content/heart.css" rel="stylesheet" />
+    <script src="~/Scripts/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="container bg">
+        <div class="hometown">
+            <div class="heart">
+            </div>
+            <div id="top"> 12-31 </div>
+            <div class="city">SSH</div>
+            <div id="bottom"> L O V E  </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/jquery.lettering.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#top").lettering();
+            $("#bottom").lettering();
+        });
+    </script>
+</body>
+</html>
