@@ -221,6 +221,7 @@
     <Content Include="Image\Picture\ssh5.jpg" />
     <Content Include="Image\Picture\ssh6.jpg" />
     <Content Include="Image\Picture\ssh7.jpg" />
+    <Content Include="Image\Picture\ssh8.jpg" />
     <Content Include="Image\shadow.png" />
     <Content Include="Scripts\cloudflare.min.js" />
     <Content Include="Scripts\Game\ga.js" />

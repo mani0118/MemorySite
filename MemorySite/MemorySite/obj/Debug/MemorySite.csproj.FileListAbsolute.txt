@@ -204,3 +204,4 @@ C:\Users\Lianpei\Documents\GitHub\MemorySite\MemorySite\MemorySite\bin\Microsoft
 C:\Users\Lianpei\Documents\GitHub\MemorySite\MemorySite\MemorySite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Lianpei\Documents\GitHub\MemorySite\MemorySite\MemorySite\obj\Debug\MemorySite.dll
 C:\Users\Lianpei\Documents\GitHub\MemorySite\MemorySite\MemorySite\obj\Debug\MemorySite.pdb
+C:\Users\Lianpei\Documents\GitHub\MemorySite\MemorySite\MemorySite\obj\Debug\MemorySite.csprojResolveAssemblyReference.cache
